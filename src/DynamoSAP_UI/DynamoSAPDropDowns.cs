@@ -9,7 +9,7 @@ using System.Linq;
 using System.Xml;
 
 //using CoreNodeModels;
-using SAP2000v18;
+using SAP2000v20;
 using Dynamo.Utilities;
 using Dynamo.Graph.Nodes;
 using ProtoCore.AST.AssociativeAST;

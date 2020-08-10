@@ -22,7 +22,7 @@ using Autodesk.DesignScript.Runtime;
 using DynamoUnits;
 
 //SAP 
-using SAP2000v18;
+using SAP2000v20;
 
 namespace DynamoSAP.Assembly
 {
@@ -396,7 +396,7 @@ namespace DynamoSAP.Assembly
             //1. INSTANTIATE NEW OR GRAB OPEN SAPMODEL 
 
             // check if any SAP file is open, grab 
-            //SAP2000v18.SapObject mySapObject = null;
+            //SAP2000v20.SapObject mySapObject = null;
             string ModelUnits = string.Empty;
 
             // Open & instantiate SAP file

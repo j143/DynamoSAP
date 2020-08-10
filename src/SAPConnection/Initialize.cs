@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-using SAP2000v18;
+using SAP2000v20;
 // interop.COM services for SAP
 using System.Runtime.InteropServices;
 
@@ -25,8 +25,8 @@ namespace SAPConnection
         public static void InitializeSapModel(ref cSapModel mySapModel, string units)
         {
             // Create SAP Object
-            SAP2000v18.cHelper helper = new SAP2000v18.Helper();
-            SAP2000v18.cOAPI applicationObject;
+            SAP2000v20.cHelper helper = new SAP2000v20.Helper();
+            SAP2000v20.cOAPI applicationObject;
             applicationObject = helper.CreateObject("CSI.SAP2000.API.SapObject");
 
             // get enum from Units
@@ -64,8 +64,8 @@ namespace SAPConnection
             //cOAPI applicationObject = (cOAPI)SAPAssembly.CreateInstance("CSI.SAP2000.API.SapObject");
 
             // Create SAP Object
-            SAP2000v18.cHelper helper = new SAP2000v18.Helper();
-            SAP2000v18.cOAPI applicationObject;
+            SAP2000v20.cHelper helper = new SAP2000v20.Helper();
+            SAP2000v20.cOAPI applicationObject;
             applicationObject = helper.CreateObject("CSI.SAP2000.API.SapObject");
 
             //Start application
@@ -92,11 +92,11 @@ namespace SAPConnection
             //if (SapInstances.LongLength >= 1)
             //{
             //    SapObject Obj;
-            //    object getObj = ROTHelper.GetActiveObject("SAP2000v18.SapObject");
+            //    object getObj = ROTHelper.GetActiveObject("SAP2000v20.SapObject");
             //    if (getObj == null)
             //    {
             //        Obj = new SapObject();
-            //        getObj = ROTHelper.GetActiveObject("SAP2000v18.SapObject");
+            //        getObj = ROTHelper.GetActiveObject("SAP2000v20.SapObject");
             //    }
             //    if (getObj != null)
             //    {
@@ -121,8 +121,8 @@ namespace SAPConnection
 
             //OAPI SAP 2000 v18 Attaching to a Manually Started Instance of SAP2000
  
-            SAP2000v18.cHelper helper = new SAP2000v18.Helper();
-            SAP2000v18.cOAPI applicationObject;
+            SAP2000v20.cHelper helper = new SAP2000v20.Helper();
+            SAP2000v20.cOAPI applicationObject;
             applicationObject = helper.GetObject("CSI.SAP2000.API.SapObject");
 
             if (applicationObject == null)
